@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  tomcat:
+    ports:
+      - 8888:8080
+    build:
+      context: tomcat
+    volumes:
+      - ./myapp:/usr/local/tomcat/webapps/myapp
